@@ -60,6 +60,10 @@ The tool uses the following data inputs:
 </languages>
 ```
 
+> This file can be generated e.g. from the [Language Name Authority
+> List](https://data.europa.eu/euodp/data/dataset/language) resource
+> present on the European Union Open Data Portal.
+
 -   the path to the directory containing the resource data and metadata,
     as extracted from the ELRC-Share repository. Such a directory is
     expected to be called `ELRC_<id>_<resource_name>` and to contain at
