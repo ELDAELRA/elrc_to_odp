@@ -1,0 +1,48 @@
+(
+  (language_authority_seed_url "Seed URL to language authority codes")
+  (portal_root "URL to the CKAN-enabled data portal")
+
+  (dataset 
+    (
+     (contact_name "Name of the submitter")
+     (contact_email "E-mail of the submitter")
+     (contact_telephone "Telephone of the submitter")
+     (description "Beginning of the dataset description")
+     (metadata_language "URL and code of the language of the metadata")
+     (url "Root URL of the dataset on the data portal")
+     (status ("Dataset status, grounded in the portal ontology"))
+     (groups ((name "A portal-supported group")))
+     (rtype "Type of the dataset")
+     (owner_organisation "Organisation owning the dataset")
+    )
+  )
+  
+  (resource
+    (
+     (url "URL to the resource")
+     (resource_type "Type of the resource, grounded in the portal ontology")
+    )
+  )
+  
+  (documentation
+    (
+     (url "URL to the documentation of the resource")
+     (resource_type "Type of the resource documentation, grounded in the portal ontology")
+    )
+  )
+  
+  (validation_report
+    (
+     (url "URL to the resource validation report")
+     (resource_type "Type of the validation report, grounded in the portal ontology")
+    )
+  )
+  
+  (license
+    (
+     (title "Title of the license")
+     (url "URL to the license, within the portal, or outside it")
+     (id "Identifier of the license, grounded in the portal ontology")
+    )
+  )
+)

@@ -1,0 +1,48 @@
+(******************************************************************************)
+(* Copyright (C) 2018 Evaluations and Language Resources Distribution         *)
+(* Agency (ELDA) S.A.S (Paris, FRANCE), all rights reserved.                  *)
+(* contact http://www.elda.org/ -- mailto:info@elda.org                       *)
+(*                                                                            *)
+(* This file is part of the elrc_to_odp ELDA ELRC-Share to Open Data Portal   *)
+(* export tool.                                                               *)
+(*                                                                            *)
+(* elrc_to_odp is free software: you can redistribute it and/or modify it     *)
+(* under the terms of the GNU General Public License as published by the      *)
+(* Free Software Foundation, either version 3 of the License, or (at your     *)
+(* option) any later version.                                                 *)
+(*                                                                            *)
+(* elrc_to_odp is distributed in the hope that it will be useful, but         *)
+(* WITHOUT ANY WARRANTY; without even the implied warranty of                 *)
+(* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU          *)
+(* General Public License for more details.                                   *)
+(*                                                                            *)
+(* You should have received a copy of the GNU General Public License          *)
+(* along with elrc_to_odp, in the LICENSE file. If not, see                   *)
+(* <http://www.gnu.org/licenses/>.                                            *)
+(******************************************************************************)
+
+opam-version: "1.2"
+name: "elrc_to_odp"
+version: "1.0.0"
+maintainer: "Vladimir Popescu <vladimir@elda.org>"
+authors: [ "Vladimir Popescu" ]
+license: "GPL v3"
+available: [ ocaml-version >= "4.05.0" ]
+build: [
+    ["jbuilder" "build" "-p" name "-j" jobs]
+]
+remove: [
+    ["rm" "-f" "%{bin}%/elrc_to_odp"]
+    ["ocamlfind" "remove" "elrc_to_odp"]
+]
+depends: [
+  "base-threads" {build}
+  "core" {build}
+  "core_extended" {build}
+  "jbuilder" {build & >= "1.0+beta10"}
+  "ppx_jane" {build}
+  "xml-light" {build}
+  "yojson" {build}
+  "ocamlnet" {build}
+]
+
