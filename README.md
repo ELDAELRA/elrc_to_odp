@@ -30,6 +30,12 @@ In order to install the tool, it suffices to have
 [OPAM](http://opam.ocaml.org), installed, then to proceed, in a shell,
 to:
 
+    opam init
+
+    opam switch 4.05.0
+
+    opam update
+
     opam pin add <https://path.to.application.on.github> -y
 
 If this command is successful, the tool can be used as:
