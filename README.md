@@ -40,7 +40,7 @@ to:
 
 If this command is successful, the tool can be used as:
 
-    elrc_to_odp --help
+    elrc_to_odp -help
 
 in order to see the available options, which are documented below.
 
